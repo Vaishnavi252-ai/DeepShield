@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DeepShield Face Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔍 DeepShield: Live Biometric Face Scanner</h1>
+  <video id="input_video" autoplay muted></video>
+  <canvas class="output_canvas" id="output_canvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="scanner.js"></script>
+</body>
+</html>
