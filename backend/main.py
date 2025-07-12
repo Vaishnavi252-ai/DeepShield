@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from routers import scan  
 import os
 import shutil
 
@@ -34,3 +35,5 @@ async def upload_file(file: UploadFile = File(...)):
         "size": os.path.getsize(file_path)
     }
 
+# Include the scan router
+app.include_router(scan.router)
